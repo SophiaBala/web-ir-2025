@@ -1,0 +1,66 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo{
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav ul{
+    display: flex;
+}
+
+.header__nav-list{
+    font-family: Gilroy-SemiBold;
+    font-weight: 600;
+    font-size: 11px;
+    margin-right: 40px;
+    color: #73738D;
+}
+
+.header__login{
+    font-size: 11px;
+    padding-left: 40px;
+}
+
+.header__button {
+    background-color: transparent;
+    border-color: #1943EF;
+    border-radius: 34px;
+    font-weight: 600;
+    font-size: 11px;
+    color: #1943EF;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 118px;
+    cursor: pointer;
+}
+
+.link_container{
+    background-color: #fff;
+    border: 2px solid;
+    border-color: #1943EF;
+    border-radius: 34px;
+    font-weight: 600;
+    font-size: 11px;
+    color: #1943EF;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 118px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.container-left{
+    display: flex;
+    align-items: center;
+}
+

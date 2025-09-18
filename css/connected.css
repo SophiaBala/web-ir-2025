@@ -1,0 +1,53 @@
+.stay-connected{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.send-content{
+    align-items: center;
+    width: 380px;
+    height: 160px;
+    gap: 15px;
+    padding-left: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 55px #e2e4e8;
+    border-radius: 16px;
+    margin-top: 80px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 18px;
+}
+
+.card-menu {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: rgba(34,34,34,0.7);
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.send-title{
+font-family: Gilroy-SemiBold;
+font-weight: 600;
+font-size: 17px;
+color: #222222;
+margin: 0;
+padding-top: 20px;
+}
+
+.message-paragraph{
+font-family: Gilroy-Medium;
+font-weight: 500;
+font-size: 9.7px;
+color: rgba(115, 115, 141, 0.8);
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 55px;
+line-height: 180%;
+}

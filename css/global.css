@@ -1,0 +1,62 @@
+body {
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+a{
+    text-decoration: none;
+    color: #73738D;
+}
+
+li{
+    display: block;
+}
+
+.title{
+    font-family: Gilroy-Bold;
+    font-weight: 600;
+    font-size: 40px;
+    color: #222222;
+}
+
+.paragraph{
+    font-family: Gilroy-Medium;
+    color: #73738D;
+    font-size: 14.5px;
+}
+
+.paragraph-text{
+    font-family: Gilroy-Medium;
+    font-weight: 500;
+    font-size: 11px;
+    color: #73738D;
+    margin: 0;
+}
+
+.article-title{
+    font-family: Gilroy-Bold;
+    color: #222222;
+    font-size: 25px;
+    margin: 0;
+}
+
+
+.subtitle{
+    font-family: Gilroy-Medium;
+    font-weight: 500;
+    font-size: 11px;
+    color: rgba(34, 34, 34, 0.8);
+    margin: 0;
+    padding-right: 15px;
+}
+
+.article{
+    width: 370px;
+    align-self: flex-start;
+}

@@ -1,0 +1,50 @@
+.hero{
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/phone.svg);
+    background-repeat: no-repeat; 
+    height: 670px;
+    background-position: right center;
+}
+
+.container__hero-text{
+    width: 440px;
+    padding-top: 140px;
+}
+
+.hero__form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 34px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    width: 424px;
+}
+
+.hero__form input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 11px;
+    border-radius: 34px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-family: Gilroy-Medium;
+
+}
+
+.hero__form button{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 11px;
+    width: 156px;
+    background: #1943EF;
+    border-color: #1943EF;
+    border: none;
+    border-radius: 34px;
+    color:#FFFFFF;
+    font-family: Gilroy-Medium;
+    cursor: pointer;
+}

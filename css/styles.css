@@ -1,0 +1,32 @@
+@import "./global.css";
+
+@import "./header.css";
+
+@import "./hero.css";
+
+@import "./reminders.css";
+
+@import "./prices.css";
+
+@import "./sync.css";
+
+@import "./connected.css";
+
+@import "./free-trial.css";
+
+@import "./footer.css";
+
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(../fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(../fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-SemiBold;
+    src: url(../fonts/Gilroy-SemiBold.ttf);
+}
