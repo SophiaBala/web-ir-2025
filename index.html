@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1 website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__menu" onclick="toggleMenu()">
+          <img src="img/menu.svg" alt="menu" class="header__menu-button">
+        </div>
+        <div class="container-left">
+          <h2 class="header__logo">Relationz</h2>
+          
+        </div>
+        <nav id="nav-links" class="header__nav">
+          <ul>
+            <li class="header__nav-list"><a class="header__nav-item" href="">Services</a></li>
+            <li class="header__nav-list"><a class="header__nav-item" href="">Enterprice</a></li>
+            <li class="header__nav-list"><a class="header__nav-item" href="">Pricing</a></li>
+            <li class="header__nav-list"><a href="#" class="header__nav-item">Login</a></li>
+          </ul>
+          <div class="link_container">
+            <a href="#" class="header__button">Try it for free</a>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero__article">
+            <div class="container__hero-text">
+              <h1 class="title">Take your relationships to the next level</h1>
+              <p class="paragraph">The multichannel sales engagement platform which automates personal email outreach, calls, and tasks, while Sales can focus on what really matters - closing deals.</p>
+            </div>
+            <form class="hero__form">
+              <input type="email" placeholder="Email id" required>
+              <button type="submit">Try it for free</button>
+            </form>
+          </div>
+
+          <div class="hero__phone">
+            <div class="circles">
+              <img src="img/circle2.svg" alt="circle" class="circle-img circle2">
+              <img src="img/circle1.svg" alt="circle" class="circle-img circle1">
+            </div>
+            <img src="img/phone.svg" alt="Phone" class="phone">
+          </div>
+
+
+        </section>
+
+        <section class="reminders">
+          <div class="cards">
+            <div class="container__reminders">
+              <img src="img/ava1.svg" alt="Ava1" class="avatar">
+                <p class="subtitle">
+                  You have a meeting with <strong class="highlight">Surbhi</strong> to help her with her portfolio. 
+                  She got a new pet (Dog named Tiger).
+                </p>
+            </div>
+            <div class="container__reminders">
+              <img src="img/ava2.svg" alt="Ava1" class="avatar">
+                <p class="subtitle">
+                  <strong class="highlight">Ripal</strong> has recently been to Thailand and she wants to discuss about new Job opportunity.
+                </p>
+            </div>
+            <div class="container__reminders">
+              <img src="img/ava3.svg" alt="Ava1" class="avatar">
+                <p class="subtitle">
+                  <strong class="highlight">Prashasti</strong> hasn’t responded to your Email from 22 Jan, 2020 <br>
+                  <span class="highlight">Want to check up on her? <a class="follow-link" href="#">Follow up</a></span>
+                </p>
+            </div>
+          </div>
+          
+          <aside class="article">
+            <h3 class="article-title">Get reminders to follow up</h3>
+            <p class="paragraph">We remind you of everything important and track everything that’s important to your important ones so you always stay connected. We only tell you the details when you need them the most.</p>
+              <ul class="checklist">
+                <li>Birthdays</li>
+                <li>Business Meetings</li>
+                <li>Friends & Family</li>
+                <li>Surroundings</li>
+              </ul>
+          </aside>
+        </section>
+
+        <section class="sync">
+          <article class="article__sync">
+            <img src="img/sync.svg" alt="sync" class="green-logo">
+            <h3 class="article-title">Our sync remembers everything</h3>
+            <p class="paragraph">We build a huge databasse of all your contacts with all the possible details they share with you and you can access it anywhere, anytime. It’s works so well that you will love it like we do.</p>
+            <ul class="checklist">
+              <li>Birthdays</li>
+              <li>Business Meetings</li>
+              <li>Friends & Family</li>
+              <li>Surroundings</li>
+            </ul>
+          </article>
+          <div class="person-card">
+            <div class="profile">
+              <img src="img/ava4.svg" alt="ava4">
+              <div class="person-name">
+                <h4 class="name">Archana Deshmukh</h4>
+                <p class="subtitle">Product Design Consultant</p>
+              </div>
+            </div>
+            <div class="archana-info">
+              <ul class="info-list">
+                  <li class="info-item"><img src="img/birthday.svg">17 April, 1994</li>
+                  <li class="info-item"><img src="img/workplace.svg">Product Design Consultant</li>
+                  <li class="info-item"><img src="img/check.svg">Went to Amsterdam with parents to visit her brother.</li>
+                </ul>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="stay-connected">
+          <article class="send-content">
+            <div class="card-header">
+              <h5 class="send-title">Send content around anxiety</h5>
+              <button class="card-menu">⋯</button>
+            </div>
+            <p class="subtitle">3 people on the list</p>
+            <p class="message-paragraph">
+              We all worry and get upset from time to time. It’s a normal part of life, right?
+              But what happens when that anxiety or anger takes over, and you can’t calm down?
+              Being able to calm yourself in the mome...
+            </p>
+          </article>
+          <div class="article">
+            <img src="img/microba.svg" alt="sync" class="green-logo">
+            <h3 class="article-title">Stay connected in a few clicks</h3>
+            <p class="paragraph">The multichannel sales engagement platform which automates personal email outreach, calls, and tasks, while Sales can focus on what really matters - closing</p>
+          </div>
+        </section>
+
+        <section class="free-trial">
+          <div class="card-trial">
+            <div class="card-text">
+              <h3 class="article-title-trial">Form better relationships with everyone</h3>
+              <p class="paragraph-text">Start your free 14 days trial.</p>
+            </div>
+            <a href="#" class="trial-button">Try it for free</a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer-logo">Relationz</p>
+        <p class="paragraph-text">Copyright © 2010 - 2019 Relationz Ltd. All rights reserved.</p>
+      </footer> 
+
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+.sync{
+    padding-top: 10%;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.green-logo{
+    padding-bottom: 30px;
+
+}
+
+
+.person-card{
+    align-items: center;
+    min-width: 350px;  
+    width: 100%;      
+    min-height: 210px;
+    gap: 15px;
+    padding-left: 15px;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 55px #e2e4e8;
+    border-radius: 16px;
+    margin-top: 40px;
+    margin-bottom: 10%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 25px;
+}
+
+.name{
+    font-family: Gilroy-SemiBold;
+    font-size: 17px;
+    font-weight: 600 ;
+    color: #222222;
+    margin: 0;
+}
+
+.info-list {
+    display: grid;
+    gap: 20px 60px; 
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    font-family: Gilroy-Medium;
+    font-size: 11px;
+    color: rgba(34, 34, 34, 0.8);
+}
+
+.checklist li {
+    position: relative;
+    padding-left: 30px; 
+}
+
+.checklist li::before {
+    position: absolute;
+    left: 0;
+
+}
+
+.info-list li img {
+    margin-right: 8px; 
+    vertical-align: middle; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .sync {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        width: 93%;
+        
+    }
+
+    .person-card {
+        min-width: auto;
+        margin-right: 20px;
+    }
+} 
+
+
+
+@media screen and (min-width: 1600px) {
+    .sync {
+        gap: 60px;
+        margin-right: 40px;
+    }
+
+    .article__sync {
+        margin-top: 0;  
+        padding-top: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .person-card {
+        max-width: 50%;  
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+} 

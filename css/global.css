@@ -1,0 +1,139 @@
+body {
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #73738D;
+}
+
+li{
+    display: block;
+}
+
+.title{
+    font-family: Gilroy-Bold;
+    font-weight: 600;
+    font-size: 35px;
+    color: #222222;
+}
+
+.paragraph{
+    font-family: Gilroy-Medium;
+    color: #73738D;
+    font-size: 0.9rem;
+}
+
+.paragraph-text{
+    font-family: Gilroy-Medium;
+    font-weight: 500;
+    font-size: 11px;
+    color: #73738D;
+    margin: 0;
+}
+
+.article-title{
+    font-family: Gilroy-Bold;
+    color: #222222;
+    font-size: 25px;
+    margin: 0;
+}
+
+
+.subtitle{
+    font-family: Gilroy-Medium;
+    font-weight: 500;
+    font-size: 11px;
+    color: rgba(34, 34, 34, 0.8);
+    margin: 0;
+    padding-right: 15px;
+}
+
+.article{
+    width: 370px;
+    align-self: flex-start;
+}
+
+.article__sync{
+    min-width: 300px;
+    align-self: flex-start;
+}
+
+.article-title-trial{
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+
+
+@media screen and (max-width: 760px) {
+    body{
+        padding: 0 0px;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .title {
+        font-size: 2.5rem;   
+        text-align: center;  
+    }
+
+    .paragraph {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    .article-title{
+    font-family: Gilroy-Bold;
+    color: #222222;
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+    }
+    
+
+    .article-title-trial{
+    font-family: Gilroy-Bold;
+    color: #222222;
+    font-size: 1.2rem;
+    margin: 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1300px; 
+        width: 100%;
+        margin-left: 80px;
+        margin-right: 40px;
+        padding: 0 20px;  
+    }
+
+    .paragraph{
+        font-size: 15px;
+    }
+
+    .paragraph-text{
+        font-size: 15px;
+    }
+    .subtitle{
+        font-size: 13px;
+    }
+
+    .header__nav-item{
+        font-size: 15px;
+    }
+}

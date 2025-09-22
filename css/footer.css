@@ -1,0 +1,24 @@
+.footer{
+    margin: 30px;
+    display: flex;
+    justify-content: center;  
+    align-items: center;    
+    flex-direction: column;    
+}
+
+.footer-logo{
+    font-family: Gilroy-Bold;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #222222;
+    margin: 0;
+    padding-bottom: 17px;
+}
+
+@media screen and (max-width:764px) {
+    .footer{
+        text-align: center;
+    }
+}
+

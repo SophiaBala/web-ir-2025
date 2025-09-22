@@ -1,0 +1,164 @@
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 670px;
+    background-position: right center;
+}
+
+.hero__phone {
+    position: relative;
+    display: inline-block;
+}
+
+.circle-img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: pulsation 4s infinite;
+    z-index: 0;
+}
+
+.circle1 {
+    bottom: 0;
+    left: 0;
+    animation-delay: 0s;
+}
+
+.circle2 {
+    top: 0;
+    right: 0;
+    animation-delay: 2s;
+}
+
+.phone {
+    position: relative;
+    z-index: 2; 
+    display: block;
+    max-width: 100%;
+}
+
+@keyframes pulsation {
+    0% { 
+        transform: scale(0.3);
+        opacity: 0.8; 
+    } 
+    100% { 
+        transform: scale(2.5); opacity: 0; 
+    } 
+}
+
+
+.container__hero-text{
+    width: 440px;    
+}
+
+.hero__form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 34px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    max-width: 424px;
+    width: 100%;
+}
+
+.hero__form input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 11px;
+    border-radius: 34px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    font-family: Gilroy-Medium;
+
+}
+
+.hero__form button{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 11px;
+    width: 156px;
+    background: #1943EF;
+    border-color: #1943EF;
+    border: none;
+    border-radius: 34px;
+    color:#FFFFFF;
+    font-family: Gilroy-Medium;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1200px){
+    .container__hero-text{
+        min-width: 440px;
+        width: auto;
+    }
+    
+    .hero__article{
+        width: 70%;
+    }
+
+    .container__hero-text .title{
+        font-size: 50px;
+    }
+
+    .container__hero-text .paragraph{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    .hero__form input{
+        font-size: 16px;
+    }
+
+    .hero__form {
+        max-width: 520px;
+        width: 100%;
+    }
+
+    .hero__form input {
+        font-size: 16px;
+        padding: 16px 18px;
+    }
+
+    .hero__form button {
+        font-size: 16px;
+        width: 180px;
+        padding: 16px;
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .hero{
+        margin-left: 10px;
+        margin-right: 20px;
+        margin-bottom: 0;
+        min-height: auto;   
+        padding: 40px 0; 
+    }
+
+    .container__hero-text {
+        width: 100%;          
+        padding-right: 30px;
+        padding-top: 10%;
+        box-sizing: border-box;
+    }
+
+        .hero__form {
+        width: 90%;         
+        max-width: 360px;
+        /* margin: 10px auto; */
+        
+    }
+
+    .circle1, .circle2{
+        display: none;
+    }
+}
+
+
