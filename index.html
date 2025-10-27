@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <h3 class="article">Music bands</h3> -->
+        <div>
+            <span id="totalResult"></span>
+        </div>
+
+        <input type="text" id="searchInput" placeholder="Search songs">
+        <button id="sortButton">Sort by Name (A-Z)</button>
+        <button id="sortButtonNum">Sort by Listeners</button>
+
+        <input type="text" id="itemInput" placeholder="Enter song name">
+        <input type="number" id="listenersInput" placeholder="Enter song listeners" step="1" min="0">
+        <button id="addButton">Enter</button>
+
+        <ul id="songList"></ul>
+
+        <script type="module" src="./js/import.js"></script>
+    </div>
+</body>
+</html>

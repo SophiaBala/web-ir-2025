@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    padding: 40px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input {
+    width: 250px;
+}
+
+button {
+    background-color: #474841;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #b257b3;
+}
+
+#songList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+#songList li {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.song-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.songname {
+    font-weight: bold;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.listeners {
+    color: #555;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.editBtn{
+    background-color: rgb(31, 116, 71);
+}
+
+.deleteBtn{
+    background-color: rgb(92, 6, 6);
+}
