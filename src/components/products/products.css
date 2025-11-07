@@ -1,0 +1,155 @@
+.products-container{
+    display: flex;
+    
+}
+
+h2{
+    padding-top: 5%;
+    color: white;
+    padding-bottom: 3%;
+}
+
+h4{
+    color: white;
+    font-size: 20px;
+}
+
+.filter-text{
+    font-size: 16px;
+    color: white;
+}
+
+.cart-info {
+    font-weight: 500;
+    font-size: 18px;
+    color: #6b46c1;
+}
+
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.show-more-btn {
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #6b46c1;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.show-more-btn:hover {
+    background-color: #553c9a;
+    transform: translateY(-2px);
+}
+
+.products-filter-container{
+    background: #1a1a1b;
+    width: 280px;
+    border-radius: 5%;
+    border: 3px solid rgb(127, 49, 148);
+    padding: 3%;
+    flex-shrink: 0; 
+    align-self: flex-start; 
+}
+
+.products-filter-container ul {
+    list-style: none;
+    padding: 10;
+    margin: 10px 0;
+}
+
+
+.products-filter-container li {
+    padding: 6px 0;
+    display: flex;
+    gap: 10px;
+    color: rgb(124, 122, 126);
+}
+
+
+.products-filter-container input[type="checkbox"] {
+    appearance: none;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgb(127, 49, 148);
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.products-filter-container input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: #a855f7;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 3px;
+    font-size: 14px;
+    line-height: 16px;
+    pointer-events: none;
+}
+
+
+
+.products-container-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #1a1a1b;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-info {
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-footer {
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-cart {
+    padding: 5px 10px;
+    border: none;
+    background-color: #6b46c1;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
