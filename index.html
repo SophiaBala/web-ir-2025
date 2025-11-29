@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <h3 class="article">Music bands</h3> -->
+        <div>
+            <button id="calculateTotallisteners">Total Listeners</button>
+            <span id="totalDurationResult"></span>
+        </div>
+
+        <input type="text" id="searchInput" placeholder="Search songs">
+        <button id="sortButton">Sort</button>
+        <button id="sortButtonNum">Sort</button>
+
+        <input type="text" id="itemInput" placeholder="Enter song name">
+        <input type="number" id="listenersInput" placeholder="Enter song listeners" step="1" min="0">
+        <button id="addButton">Enter</button>
+
+        <ul id="songList">
+            <li>
+                <button class="editBtn"> Edit</button>
+                <img src="Linkin_Park..jpg" class="song-image" alt="Song Image">
+                <p class="songname">Two faced</p>
+                <p class="listeners">20480</p>
+            </li>
+            <li>
+                <button class="editBtn"> Edit</button>
+                <img src="Linkin_Park.jpg" class="song-image" alt="Song Image">
+                <p class="songname">In the end</p>
+                <p class="listeners">64020</p>
+            </li>
+            <li>
+                <button class="editBtn"> Edit</button>
+                <img src="Linkin_Park..jpg" class="song-image" alt="Song Image">
+                <p class="songname">Casualty</p>
+                <p class="listeners">2879</p>
+            </li>
+            <li>
+                <button class="editBtn"> Edit</button>
+                <img src="Linkin_Park.jpg" class="song-image" alt="Song Image">
+                <p class="songname">Papercut</p>
+                <p class="listeners">5198</p>
+            </li>
+        </ul>
+
+
+
+
+        <script type="module" src="./js/import.js"></script>
+    </div>
+</body>
+</html>
