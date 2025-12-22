@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './products.css';
 import cameraproduct from '../../assets/camera-product.jpeg';
-
+import productsData from "../../data";
 
 
 function Products() {

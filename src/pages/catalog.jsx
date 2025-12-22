@@ -12,6 +12,8 @@ function Catalog() {
     const dispatch = useDispatch();
     const cartCount = useSelector(state => state.cart.totalQuantity);
 
+
+
     const [productsData, setProductsData] = useState([]);
     const [selectedBrands, setSelectedBrands] = useState([]);
     const [priceFilter, setPriceFilter] = useState("");
