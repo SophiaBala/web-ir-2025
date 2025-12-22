@@ -1,0 +1,27 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.camera-hero{
+    width: 30%;
+    height: 30%;
+}
+
+.hero-text-container{
+    width: 35%;
+    margin-right: 25%;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    padding-bottom: 5%;
+}
+
+p{
+    font-size: 30px;
+    color: rgb(127, 49, 148);
+}
