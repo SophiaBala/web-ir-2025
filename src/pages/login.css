@@ -1,0 +1,51 @@
+.container-login {
+    max-width: 350px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f5f5f5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 20px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #6b46c1;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #7a5cff;
+    outline: none;
+}
+
+p {
+    color: grey;
+    font-size: 14px;
+}

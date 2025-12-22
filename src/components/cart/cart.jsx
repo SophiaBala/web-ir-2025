@@ -1,16 +1,15 @@
 import { useSelector, useDispatch } from "react-redux";
-import { removeFromCart, addToCart, delFromCart, loadCartFromStorage } from "../../redux/cartSlice";
+import { removeFromCart, addToCart, delFromCart } from "../../redux/cartSlice";
 import "./cart.css";
 import React, { useEffect } from "react";
+import { useNavigate, Link } from 'react-router-dom';
+
 
 function Cart() {
     const cart = useSelector((state) => state.cart);
     const dispatch = useDispatch();
     const cartCount = useSelector((state) => state.cart.totalQuantity);
 
-    useEffect(() => {
-        dispatch(loadCartFromStorage());
-    }, [dispatch]);
 
     return (
         <div className="cart-container">
@@ -23,7 +22,7 @@ function Cart() {
             {cart.items.map((item) => (
                 <li className="cart-item" key={`${item.id}-${item.selectedColor ?? "none"}`}>
                 <span className="item-info">
-                    {item.name} {item.selectedColor ? `(${item.selectedColor})` : ""} x{item.quantity} — ${item.price * item.quantity}
+                    {item.name} {item.selectedColor ? `(${item.selectedColor})` : ""} ${item.price * item.quantity}
                 </span>
 
                 <button
@@ -34,17 +33,6 @@ function Cart() {
                 >
                     Remove
                 </button>
-
-                <button
-                    className="add-to-cart"
-                    onClick={(e) => {
-                    e.stopPropagation();
-                    dispatch(addToCart({ ...item, selectedColor: item.selectedColor ?? null }));
-                    }}
-                >
-                    +
-                </button>
-
                 <button
                     className="del-from-cart"
                     onClick={(e) => {
@@ -54,6 +42,16 @@ function Cart() {
                 >
                     -
                 </button>
+                <p className="quantity">{item.quantity}</p>
+                <button
+                    className="add-to-cart"
+                    onClick={(e) => {
+                    e.stopPropagation();
+                    dispatch(addToCart({ ...item, selectedColor: item.selectedColor ?? null }));
+                    }}
+                >
+                    +
+                </button>
                 </li>
             ))}
             </ul>
@@ -62,6 +60,7 @@ function Cart() {
         <div className="cart-summary">
             <p>Total Quantity: {cart.totalQuantity}</p>
             <p>Total Price: ${cart.totalPrice}</p>
+            <button><Link to="/checkout">checkout</Link></button>
         </div>
         </div>
     );

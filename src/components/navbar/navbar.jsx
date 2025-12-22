@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
 import "./navbar.css"
 import logo from "../../assets/logo.png"
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const navbar = () => {
 
     const [menu, setMenu] = useState("shop")
+    const navigate = useNavigate();
 
+    const handleSignOut = () => {
+        localStorage.removeItem("user");
+
+        navigate("/");
+    }
     return (
     <nav className='container'>
         <div className="logo-container">
@@ -20,6 +26,9 @@ const navbar = () => {
             <Link to="/cart">Cart</Link>
 
         </ul>
+        <button className="signout-btn" onClick={handleSignOut}>
+            Sign Out
+        </button>
     </nav>
     )
 }

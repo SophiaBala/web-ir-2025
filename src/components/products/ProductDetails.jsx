@@ -6,7 +6,6 @@ import Loader from "../loader/loader";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../../redux/cartSlice";
 
-// якщо є стилі
 
 const ProductDetails = () => {
     const { id } = useParams();
@@ -38,7 +37,6 @@ const ProductDetails = () => {
         fetchProduct();
     }, [id, navigate]);
 
-    // set default color when product loads
     useEffect(() => {
         if (product) {
         if (product.colors && product.colors.length > 0) {
@@ -55,7 +53,6 @@ const ProductDetails = () => {
     if (!product) return <p>Product not found</p>;
 
     const handleAddToCart = () => {
-        // pass selectedColor together with product data
         dispatch(addToCart({ ...product, selectedColor }));
     };
 
@@ -76,7 +73,6 @@ const ProductDetails = () => {
             <p>Brand: {product.brand}</p>
             <p>Price: ${product.price}</p>
 
-            {/* COLOR SELECTOR */}
             <div className="color-select-row">
                 <label htmlFor="color-select">Color:</label>
                 {product.colors && product.colors.length > 0 ? (

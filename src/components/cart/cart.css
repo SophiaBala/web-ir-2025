@@ -6,6 +6,7 @@
     border-radius: 12px;
     color: white;
     box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    align-items: center;
 }
 
 .cart-title {
@@ -47,7 +48,7 @@
 }
 
 .add-to-cart {
-    background: #7df970;
+    background: #a572fe;
     border: none;
     color: white;
     padding: 8px 14px;
@@ -57,9 +58,8 @@
 }
 
 .del-from-cart {
-    background: #9a5454;
+    background: #4b464f;
     border: none;
-    color: white;
     padding: 8px 14px;
     border-radius: 8px;
     cursor: pointer;
@@ -70,4 +70,11 @@
     font-size: 18px;
     margin-top: 10px;
     color: #bbb;
+}
+
+
+.quantity{
+    font-size: 16px;
+    color: #bbb;
+    margin: 0;
 }
