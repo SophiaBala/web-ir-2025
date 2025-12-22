@@ -1,19 +1,22 @@
-// src/components/ProductCard.jsx
 import React from "react";
-import PrimaryButton from "./PrimaryButton";
 import "./ProductCard.css";
+import cameraproduct from "../../assets/camera-product.jpeg";
 
-const ProductCard = ({ product }) => {
+const ProductCard = () => {
     return (
         <div className="product-card">
-        <img src={product.image} alt={product.name} className="product-image" />
-        <div className="product-info">
-            <h4>{product.name}</h4>
-            <p>${product.price}</p>
-        </div>
-        <div className="product-footer">
-            <PrimaryButton text="View more" />
-        </div>
+            <img
+                src={cameraproduct}
+                alt="Camera"
+                className="product-image"
+            />
+            <div className="product-info">
+                <h4>Camera Model</h4>
+                <p>$0000</p>
+            </div>
+            <div className="product-footer">
+                <button disabled>View more</button>
+            </div>
         </div>
     );
 };
